@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #EAC67A;
+  height: 100%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.blok{
+  background-color: #984B43;
+  border-radius: 10%;
+  padding:5%;
+  width: 75%;
+}
+.foto{
+  width: 70%;
+  height: 40%;
+  border-radius: 10%;
+}
+.tijdlijntitel{
+  text-align: center;
+  color: #233237;
+}
+.titel{
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.tekst{
+  color: white;
+  font-size: 12px;
+}
+.jaar{
+  transform: rotate(90deg);
+  color: #233237;
+  font-weight: bolder;
+  align-self: center;
+  font-size: 30px;
+}
+.blokcontainer{
+  display: flex;
+  flex-direction: row;
+}
+.pijl{
+  width: 25%;
+}
+
+@media (min-width: 480px) {
+  .tekst {
+     font-size: 15px;
+    }
+  .titel {
+      font-size: 20px;
+    }
+  .jaar{
+      font-size: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+   .blokcontainer{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .blok{
+    width: 80%;
+    padding: 5%;
+    padding-top: 2%;
+  }
+  .jaar{
+    transform: rotate(0deg);
+    width: 40%;
+    height: 25%;
+    align-self: flex-start;
+    font-size: 50px;
+  }
+  .titel {
+    width: 50%;
+    float: right;
+    margin-top: 10%;
+  }
+  .foto{
+    order: 3;
+    width: 70%;
+    height: 80%;
+    align-self: flex-start;
+  }
+  .tekst{
+    width: 50%;
+    float: right;
+    margin-top: -25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blok{
+    width: 90%;
+  }
+  .foto{
+    width: 80%;
+  }
+  .titel{
+    font-size: 25px;
+  }
+}
